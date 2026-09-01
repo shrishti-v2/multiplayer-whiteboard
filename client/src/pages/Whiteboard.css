@@ -1,0 +1,45 @@
+.whiteboard-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+}
+
+.whiteboard-container {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.canvas-wrapper canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .whiteboard-container {
+    flex-direction: column;
+  }
+
+  .canvas-wrapper {
+    min-height: 60vh;
+  }
+}
